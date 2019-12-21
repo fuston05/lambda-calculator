@@ -26,24 +26,30 @@ code {
 
 .App{
   display: flex;
-  width: 460px;
+  width: 90%;
   flex-direction: column;
   margin: 0 auto;
 }
 
+.mainBtnCont{
+  display: flex;
+}
+
 .bottomRowCont{
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  flex-direction: column;
 }
 
-.operators{
-  margin-top: -100px;
-  /* margin-left: 80px; */
+.operators button{
+  background-color: #237293;
 }
 
-.numbers{
-  width: 1800px;
+.numbers button{
+  background-color: #184279;
+}
+
+.specials button{
+  background-color: #225C9E;
 }
 
 
@@ -53,6 +59,13 @@ button{
   width: 90px;
   border-radius: 100px;
   margin: 5px 12px;
+  border: 1px solid black;
+  box-shadow: 0 3px 3px;
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 button:nth-child(10){
