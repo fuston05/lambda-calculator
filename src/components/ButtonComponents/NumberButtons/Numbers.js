@@ -13,7 +13,7 @@ const Numbers = () => {
   // STEP 2 - add the imported data to state
   const [nums, setNums]= useState(numbers);
   return (
-    <div>
+    <div className= 'numbers'>
       {nums.map( (ele, index) => {
         return <NumberButton key= {index} buttonLabel= {ele} />
       } )}
