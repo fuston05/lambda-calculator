@@ -11,12 +11,8 @@ const Specials = (props) => {
   return (
     <div className= 'specials'>
       {data.map( ( ele, index) => {
-        // console.log('specials.js log:'+ele);
-        if(ele === "C"){
-          return <SpecialButton clicked= {props.clicked} key= {index} buttonLabel= {ele} />
-        }else{
-          return <SpecialButton key= {index} buttonLabel= {ele} />
-        }
+        
+          return <SpecialButton clicked= { props.clicked } key= {index} buttonLabel= {ele} />
 
       } )}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button

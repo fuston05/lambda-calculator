@@ -15,7 +15,7 @@ const Numbers = (props) => {
   return (
     <div className= 'numbers'>
       {nums.map( (ele, index) => {
-        return <NumberButton clicked= {props.clicked } key= {index} buttonLabel= {ele} />
+        return <NumberButton clicked= {props.clicked} key= {index} buttonLabel= {ele} />
       } )}
 
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
